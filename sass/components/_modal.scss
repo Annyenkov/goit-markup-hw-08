@@ -32,14 +32,18 @@
     top: 8px;
     right: 8px;
     display: flex;
-    height: 30px;
-    width: 30px;
-    fill: $second-text-color;
     justify-content: center;
     align-items: center;
+    height: 32px;
+    width: 32px;
+    color: $second-text-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $third-text-color;
+    & svg {
+      fill: currentColor;
+      flex-shrink: 0;
+    }
   }
   &__content {
     text-align: center;
@@ -133,10 +137,9 @@
     background-origin: border-box;
   }
   &__accept {
-    display: block;
     margin-right: 8px;
-    height: 15px;
-    width: 16px;
+    min-height: 15px;
+    min-width: 16px;
     border-radius: 4px;
     border: 2px solid $second-text-color;
   }
