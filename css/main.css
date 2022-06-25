@@ -321,8 +321,7 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 0 15px;
   overflow: hidden;
 }
@@ -556,15 +555,15 @@ img {
   display: block;
   height: 400px;
   width: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/img-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/img-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/img-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/img-hero.jpg);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: url("./images/img-hero.jpg");
+    background-image: url("./../../images/img-hero.jpg");
   }
 }
 .hero__content {
@@ -712,6 +711,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  margin: -15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
@@ -720,10 +720,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  margin-bottom: 4%;
-  max-height: 92px;
-  max-width: 210px;
+  margin: 15px;
+  height: 92px;
+  width: calc((100% - 60px) / 2);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

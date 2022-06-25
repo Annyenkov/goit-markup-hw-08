@@ -11,15 +11,15 @@
   &__list {
     display: flex;
     padding: 0;
+    margin: -15px;
     flex-wrap: wrap;
     list-style: none;
   }
   &__item {
     display: flex;
-    margin: auto;
-    margin-bottom: 4%;
-    max-height: 92px;
-    max-width: 210px;
+    margin: 15px;
+    height: 92px;
+    width: calc((100% - 2 * 30px) / 2);
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
