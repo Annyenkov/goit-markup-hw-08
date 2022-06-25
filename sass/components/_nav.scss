@@ -1,7 +1,7 @@
 .nav {
   &__list {
     margin-top: 48px;
-    margin-bottom: 302px;
+    margin-bottom: 50%;
     list-style-type: none;
   }
   &__link {
@@ -19,6 +19,6 @@
     }
   }
   &__list &__item + &__item {
-    margin-top: 32px;
+    margin-top: 7%;
   }
 }
