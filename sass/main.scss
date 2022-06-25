@@ -1,6 +1,7 @@
 @import "./base/modern-normalize";
-@import "./base/base-style";
 @import "./base/variables";
+@import "./base/base-style";
+@import "./utils/section";
 @import "./components/logo";
 @import "./components/container";
 @import "./components/header";
@@ -8,3 +9,12 @@
 @import "./components/nav";
 @import "./components/contacts";
 @import "./components/social";
+@import "./components/hero";
+@import "./utils/button";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/modal";
+@import "./components/footer";
+
