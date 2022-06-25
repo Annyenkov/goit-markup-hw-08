@@ -10,14 +10,14 @@
   }
   &__list {
     display: flex;
-    margin: -15px;
     padding: 0;
     flex-wrap: wrap;
     list-style: none;
   }
   &__item {
     display: flex;
-    margin: 15px;
+    margin: auto;
+    margin-bottom: 4%;
     max-height: 92px;
     max-width: 210px;
     justify-content: center;

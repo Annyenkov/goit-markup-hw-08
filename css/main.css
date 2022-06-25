@@ -711,7 +711,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -15px;
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -721,7 +720,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px;
+  margin: auto;
+  margin-bottom: 4%;
   max-height: 92px;
   max-width: 210px;
   -webkit-box-pack: center;
