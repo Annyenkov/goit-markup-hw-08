@@ -6,10 +6,7 @@
     display: block;
     height: 400px;
     width: auto;
-    background-image: linear-gradient(to right,
-   rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),
-    url("./../images/Img-hero.jpg");
+    background-image: $hero-bg-gradient;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
