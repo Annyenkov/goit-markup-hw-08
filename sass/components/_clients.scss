@@ -16,13 +16,24 @@
     list-style: none;
   }
   &__item {
-    display: flex;
     margin: 15px;
-    height: 92px;
     width: calc((100% - 2 * 30px) / 2);
+  }
+  &__link {
+    display: flex;
+    height: 92px;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    color: $icon-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+  &__icon {
+    fill: currentColor;
   }
 }

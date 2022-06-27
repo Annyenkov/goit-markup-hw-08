@@ -22,4 +22,33 @@
     text-transform: uppercase;
     color: $third-text-color;
   }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__email {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    color: $third-text-color;
+    background-color: $accent-color;
+  }
+  &__icon {
+    margin-left: 10px;
+  }
 }
