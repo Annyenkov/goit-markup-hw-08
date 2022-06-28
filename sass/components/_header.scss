@@ -7,9 +7,8 @@
     align-items: center;
   }
   &__btn {
-    position: fixed;
     right: 15px;
-    top: 10px;
+    top: 10px; 
     display: flex;
     height: 40px;
     width: 40px;
@@ -20,6 +19,8 @@
     border-radius: 50%;
     margin-left: auto;
     background-color: rgba($color: #ffffff, $alpha: 0.8);
-
+  }
+  &--border {
+    border: 1px solid $portfolio-header-border;
   }
 }

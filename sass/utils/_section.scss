@@ -2,4 +2,7 @@
   &:not(:last-child) {
     padding-bottom: 60px;
   }
+  &--indent {
+    margin: 60px 0;
+  }
 }
