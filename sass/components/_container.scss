@@ -1,7 +1,13 @@
 .container {
-  margin: auto;
   padding: 0 15px;
-  &--baseline {
-  
+  &__mobile {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__mobile {
+    height: 60px;
   }
 }
