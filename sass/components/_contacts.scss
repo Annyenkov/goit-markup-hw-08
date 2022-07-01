@@ -12,9 +12,13 @@
     letter-spacing: 0.02em;
     color: $first-text-color;
     text-decoration: none;
+    &--indent {
+      margin-bottom: 10px;
+    }
   }
   &__icon {
     fill: currentColor;
+    margin-right: 8px;
   }
 }
 
@@ -31,7 +35,6 @@
       color: $first-text-color;
   
       &--indent {
-        display: block;
         margin-bottom: 32px;
       }
   

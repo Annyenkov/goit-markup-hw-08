@@ -10,6 +10,7 @@
   }
   &__list {
     display: flex;
+    justify-content: center;
     padding: 0;
     margin: -15px;
     flex-wrap: wrap;
@@ -35,5 +36,12 @@
   }
   &__icon {
     fill: currentColor;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    &__item {
+      width: 226px;
+    }
   }
 }
