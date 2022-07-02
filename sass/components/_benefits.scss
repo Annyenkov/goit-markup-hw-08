@@ -16,9 +16,9 @@
   }
   &__pic {
     display: flex;
-    height: 120px;
     justify-content: center;
     align-items: center;
+    height: 120px;
     border-radius: 4px;
     background-color: $team-bg;
   }
@@ -40,7 +40,7 @@
 @media screen and (min-width: 481px) {
   .benefits {
     &__item {
-      max-width: 354px;
+     max-width: calc((100% - 2 * 30px) / 2);
     }
   }
 }
