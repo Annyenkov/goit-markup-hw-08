@@ -1,19 +1,24 @@
 .contact {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
+  margin: -5px;
   padding: 0;
+  align-items: center;
+
+  &__item {
+    margin: 5px;
+  }
 
   &__link {
     display: flex;
-    align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $first-text-color;
     text-decoration: none;
-    &--indent {
-      margin-bottom: 10px;
-    }
   }
   &__icon {
     fill: currentColor;
@@ -76,4 +81,11 @@
       }
   
     }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .contact {
+    &__link--ident {
+      margin-bottom: 10px;
+    }
+  }
 }

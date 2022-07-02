@@ -1,3 +1,43 @@
 .work {
   display: none;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: $second-text-color;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    margin: 15px;
+    height: 294px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $third-text-color;
+    background-color: $work-text-bg;
+  }
+}
+@media screen and (min-width: 769px) {
+  .work {
+    display: block;
+  }  
 }

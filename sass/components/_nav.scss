@@ -1,13 +1,9 @@
 .nav {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-between;
   &__list {
     display: flex;
     padding: 0;
-    width: 55%;
-    justify-content: space-between;
     list-style: none;
   }
   &__link {
@@ -42,5 +38,22 @@
     }
 
   }
-  
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .nav {
+    width: 100%;
+    &__list {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}
+@media screen and (min-width:769px) {
+  .nav {
+    margin-left: 93px;
+    &__list {
+      width: 294px;
+      justify-content: space-between;
+    }
+  }
 }
