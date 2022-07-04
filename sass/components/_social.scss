@@ -24,9 +24,8 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: $first-text-color;
     &--color {
-      color: $accent-color;
+      color: $first-text-color;
     }
     &--size {
       height: 44px;

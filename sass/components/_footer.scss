@@ -10,6 +10,7 @@
     color: $third-text-color;
   }
   &__contact {
+    flex-direction: column;
     padding: 0;
     text-decoration: none;
   }
@@ -31,6 +32,7 @@
   &__form {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   &__email {
     height: 50px;
@@ -39,8 +41,6 @@
   }
   &__button {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -50,5 +50,77 @@
   }
   &__icon {
     margin-left: 10px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    color: $third-text-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    &__email {
+      width: 450px;
+    }
+    &--flex {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+    &__social {
+      margin-left: 22%;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer {
+    &__container {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__mailing {
+      width: 49%;
+    }
+    &__form {
+      display: inline;
+      align-items: baseline;
+      width: 65%;
+      justify-content: space-between;
+    }
+    &--flex {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 40%;
+    }
+    &__subscribe {
+      display: block;
+      width: 350px;
+    }
+    &__email {
+      width: 100%;
+      resize: vertical;
+    }
+    &__button {
+      margin-left: 12px;
+    }
+    &__block {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
 }
