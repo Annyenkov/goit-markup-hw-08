@@ -1,4 +1,5 @@
 .modal {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -140,7 +141,7 @@
   }
   &__policy:checked + &__accept {
     border-color: #2196F3;
-    background-image: url(../../images/check.svg);
+    background-image: url(./../images/check.svg);
     background-size: contain;
     background-color: #2196F3;
     background-origin: border-box;

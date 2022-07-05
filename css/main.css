@@ -301,8 +301,8 @@ img {
   width: 100%;
 }
 
-.section:not(:last-child) {
-  padding-bottom: 60px;
+.section {
+  padding: 60px 0;
 }
 .section--indent {
   margin: 60px 0;
@@ -341,41 +341,39 @@ img {
     height: 60px;
   }
 }
+.header__mobile {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 60px;
+}
 .header__btn {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.header--border {
+  border: 1px solid #ECECEC;
 }
 
 @media screen and (min-width: 480px) {
-  .header__social {
+  .header__btn {
     display: none;
   }
-}
-@media screen and (max-width: 480px) {
-  .header__mobile {
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 60px;
-  }
-  .header__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 40px;
-    width: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    margin-left: auto;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .header--border {
-    border: 1px solid #ECECEC;
+  .header__social {
+    display: none;
   }
 }
 .menu {
@@ -474,8 +472,33 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
+}
+.nav__link--current {
+  color: #2196F3;
 }
 
+@media screen and (min-width: 481px) {
+  .nav__link {
+    position: relative;
+    padding: 32px 0;
+  }
+  .nav__link--current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #2196F3;
+  }
+}
 @media screen and (max-width: 480px) {
   .nav {
     -webkit-box-orient: vertical;
@@ -493,9 +516,6 @@ img {
     color: #212121;
   }
   .nav__link:hover {
-    color: #2196F3;
-  }
-  .nav__link--current {
     color: #2196F3;
   }
   .nav__list .nav__item + .nav__item {
@@ -553,6 +573,11 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__link:hover, .contact__link:focus {
+  color: #2196F3;
 }
 .contact__icon {
   fill: currentColor;
@@ -604,6 +629,11 @@ img {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 813px) {
+  .contact__link {
+    padding: 32px 0;
+  }
+}
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +668,13 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  border-radius: 50%;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link:hover, .social__link:focus {
+  color: #fff;
+  background-color: #2196F3;
 }
 .social__link--color {
   color: #757575;
@@ -714,6 +751,7 @@ img {
   padding: 0;
   border: 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 .button--size {
   height: 50px;
@@ -722,6 +760,11 @@ img {
 .button--color {
   color: #fff;
   background-color: #2196F3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--color:hover, .button--color:focus {
+  background-color: #188CE8;
 }
 .button--font {
   font-weight: 700;
@@ -761,6 +804,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 120px;
+  margin-bottom: 30px;
   border-radius: 4px;
   background-color: #F5F4FA;
 }
@@ -794,6 +838,7 @@ img {
   text-align: center;
 }
 .work__title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -851,7 +896,6 @@ img {
   margin-bottom: 30px;
 }
 .team__title {
-  margin-top: 60px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
@@ -903,9 +947,6 @@ img {
     max-width: calc((100% - 120px) / 4);
   }
 }
-.clients {
-  padding: 60px 15px;
-}
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -945,6 +986,8 @@ img {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   color: #2196F3;
@@ -965,6 +1008,7 @@ img {
   }
 }
 .modal {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1142,7 +1186,7 @@ img {
 }
 .modal__policy:checked + .modal__accept {
   border-color: #2196F3;
-  background-image: url(../../images/check.svg);
+  background-image: url(./../images/check.svg);
   background-size: contain;
   background-color: #2196F3;
   background-origin: border-box;
@@ -1230,6 +1274,7 @@ img {
   background-color: #2196F3;
 }
 .footer__icon {
+  fill: currentColor;
   margin-left: 10px;
 }
 .footer__block {
@@ -1357,6 +1402,12 @@ img {
 }
 .portfolio__item {
   margin: 7px 15px;
+}
+.portfolio__button {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__button--current {
   background-color: #2196F3;

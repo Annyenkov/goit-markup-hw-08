@@ -1,7 +1,5 @@
 .section {
-  &:not(:last-child) {
-    padding-bottom: 60px;
-  }
+  padding: 60px 0;
   &--indent {
     margin: 60px 0;
   }

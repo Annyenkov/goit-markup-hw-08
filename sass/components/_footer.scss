@@ -49,6 +49,7 @@
     background-color: $accent-color;
   }
   &__icon {
+    fill: currentColor;
     margin-left: 10px;
   }
   &__block {
