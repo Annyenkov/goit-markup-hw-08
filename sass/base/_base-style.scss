@@ -4,6 +4,10 @@ body {
   letter-spacing: .03em;
   color: $first-text-color;
 }
+body.modal-open,
+body.menu-open {
+  overflow: hidden;
+}
 html {
   box-sizing: border-box;
 }

@@ -65,3 +65,12 @@
     width: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .social {
+    margin-bottom: 48px;
+    justify-content: center;
+    &--margin {
+      margin-left: 0;
+    }
+  }
+}
