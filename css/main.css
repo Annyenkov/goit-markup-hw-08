@@ -614,7 +614,22 @@ img {
 
 @media screen and (max-width: 480px) {
   .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 40px;
     margin-bottom: 10%;
+  }
+  .contact__link {
+    font-size: 24px;
+  }
+  .contact__link--style {
+    font-size: 34px;
+    color: #2196F3;
   }
   .contact--indent {
     margin-bottom: 32px;
@@ -629,23 +644,13 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 40px;
+@media screen and (min-width: 481px) {
+  .contact__email {
+    margin-bottom: 0;
   }
-  .contact__link {
-    font-size: 24px;
-  }
-  .contact__link--style {
-    font-size: 34px;
-    color: #2196F3;
+  .contact__address {
+    margin-bottom: 0;
+    text-align: start;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 769px) {
@@ -1067,7 +1072,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100%;
+  height: 90%;
   overflow-y: scroll;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1257,6 +1262,10 @@ img {
           flex-direction: column;
   padding: 0;
   text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
 }
 .footer__title {
   margin-bottom: 20px;
@@ -1397,7 +1406,12 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 40%;
+    width: 42%;
+  }
+  .footer__contact {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__subscribe {
     display: block;
