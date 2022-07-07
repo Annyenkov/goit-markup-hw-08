@@ -42,7 +42,7 @@
   &__item {
     margin: 15px;
     max-height: 404px;
-    width: 370px;
+    max-width: 370px;
     border: 1px solid #eee;
     list-style: none;
     cursor: pointer;
@@ -58,8 +58,7 @@
     overflow:  hidden;
     &>img {
       display: block;
-      object-fit: cover;
-      object-position: center;
+      object-fit: contain;
     }
   }
   &__img:hover &__info {
@@ -82,11 +81,14 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__card {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+    justify-content: center;
+    padding-left: 7%;
   }
   &__name {
+    display: block;
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
