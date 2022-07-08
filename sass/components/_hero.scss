@@ -85,3 +85,10 @@
     margin-bottom: 30px;
   }
 } 
+@media screen and (min-width: 769px) {
+  .hero {
+    &__title {
+      font-size: 44px;
+    }
+  }
+}
